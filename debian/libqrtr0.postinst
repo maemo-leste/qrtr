@@ -1,0 +1,8 @@
+#!/bin/sh
+
+#DEBHELPER#
+
+rc-update del qrtr-ns default || true
+rc-update add qrtr-ns sysinit || true
+
+exit 0

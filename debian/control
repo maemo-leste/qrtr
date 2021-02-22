@@ -1,0 +1,19 @@
+Source: qrtr
+Section: pocophone
+Priority: optional
+Maintainer: Ivan J. <parazyd@dyne.org>
+Build-Depends: debhelper-compat (= 12)
+Standards-Version: 4.3.0
+Homepage: https://github.com/andersson/qrtr
+Vcs-Git: https://github.com/maemo-leste/qrtr
+Vcs-Browser: https://github.com/maemo-leste/qrtr
+
+Package: libqrtr0
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Userspace reference for net/qrtr in the Linux kernel
+
+Package: libqrtr-dev
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libqrtr0 (= ${source:Version})
+Description: Development files for libqrtr
